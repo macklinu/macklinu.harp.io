@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {
+      "title": "Post Number One",
+      "url": "post-number-one",
+      "published": true
+    },
+    {
+      "title": "What's good y'all",
+      "url": "whats-good",
+      "published": false
+    }
+  ]
+}

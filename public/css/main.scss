@@ -54,7 +54,7 @@ h1 {
   font-size:5em;
   font-weight:normal;
   text-align:center;
-  margin:100px auto 30px;
+  margin:10px auto 30px;
   font-weight: 300;
 }
 h2 {
@@ -64,6 +64,13 @@ h2 {
 }
 p {
   text-align:center;
+}
+
+li {
+  a {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+  }
 }
 
 // =========== General button styles & variables =======================================//
@@ -262,8 +269,8 @@ $scale-amt: 0.8;
         background: $dark-main;
       }
       &:active {
-        background: #afdefa;
-        color: #47a3da;
+        background: lighten($dark-main, 20%);
+        // color: #47a3da;
       }
       &.active {
         background: lighten($dark-main, 10%);
@@ -295,22 +302,6 @@ $scale-amt: 0.8;
  
 .cbp-spmenu-right.cbp-spmenu-open {
     right: 0px;
-}
- 
-/* Horizontal menu that slides from the top or bottom */
- 
-.cbp-spmenu-top {
-    top: -150px;
-    &.cbp-spmenu-open {
-      top: 0px;
-    }
-}
- 
-.cbp-spmenu-bottom {
-    bottom: -150px;
-    &.cbp-spmenu-open {
-      bottom: 0px;
-    }
 }
  
 /* Push classes applied to the body */
