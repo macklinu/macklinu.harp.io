@@ -19,8 +19,9 @@
 
 //=============== Demo Template Styles ================================================//
 
-$dark-main: rgb(32, 36, 45);
+$dark-main: rgb(132, 135, 142);
 $dark-secondary: lighten($dark-main, 30%);
+$dark-tertiary: lighten($dark-main, 40%);
 
 ::selection {
   background: darken($dark-main, 30%);
@@ -44,7 +45,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 a {
-  color: white;
+  color: $dark-tertiary;
   text-decoration: none;
   &:hover{
     color:inherit;
@@ -53,17 +54,42 @@ a {
 h1 {
   font-size:5em;
   font-weight:normal;
-  text-align:center;
-  margin:10px auto 30px;
+  text-align:left;
+  margin: 1em auto 1em;
   font-weight: 300;
 }
 h2 {
   font-size: 2em;
-  text-align: center;
+  text-align: left;
   font-weight: 300;
 }
-p {
-  text-align:center;
+h2 {
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: 300;
+}
+
+article {
+  width: 50%;
+  margin: 0 auto;
+  h1 {
+    margin: 1em auto 0.5em auto;
+  }
+  p {
+  max-width: 44rem;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: 'Cardo', Georgia, serif;
+  &.lead {
+    margin-top: 0;
+    font-size: 2.3em;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+  }
+  a {
+    background: darken($dark-main, 30%);
+  }
+}
 }
 
 li {
@@ -90,7 +116,7 @@ $transition: .2s;// increase this to see the transformations happen in slow moti
 
 /* ====================== lines button ==================================================*/
 
-$button-size : 3rem; 
+$button-size : 3.5rem; 
 $scale-amt: 0.8;
 
 //common to all three-liners
@@ -111,7 +137,7 @@ $scale-amt: 0.8;
 @mixin line {
   display: inline-block;
   width: $button-size;
-  height: $button-size/7;
+  height: $button-size/10;
   background: $color;
   border-radius: 0; 
   transition: $transition;
@@ -261,7 +287,6 @@ $scale-amt: 0.8;
     }
     a {
       display: block;
-      color: #fff;
       font-size: 1.1em;
       font-weight: 300;
       padding: 30px !important;
@@ -327,4 +352,87 @@ $scale-amt: 0.8;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+.card {
+  padding:1.5rem;
+  // box-shadow:0 1px 2px #aaa;
+  background: lighten($dark-main, 5%);
+  margin:0 1rem 1rem;
+  border-radius:0px;
+  user-select:none;
+  animation:fly-in-from-left .5s 1s ease both;
+  transform-origin:top left;
+  h1 {
+    margin: auto;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.map {
+  height:12rem;
+  //margin:0 1rem 1rem;
+  background:whitesmoke;
+  //margin:.5rem 0 0 -1.5rem;
+}
+
+.title {
+  padding: 40px;
+}
+
+$twitter-blue: #00aced;
+$instagram-blue: #517fa4;
+$linkedin-blue: #007bb6;
+$github-black: #171515;
+
+header {
+  background: $dark-main;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      &.bottom {
+        margin: 0 0 20px 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        li {
+          display: inline-block;
+          a {
+            border-bottom: none;
+          }
+          :hover {
+            background-color: transparent;
+          }
+          &#twitter:hover {
+            color: $twitter-blue;
+          }
+          &#instagram:hover {
+            color: $instagram-blue;
+          }
+          &#github:hover {
+            color: $github-black;
+          }
+          &#linkedin:hover {
+            color: $linkedin-blue;
+          }
+        }
+      }
+    }
+}
 }

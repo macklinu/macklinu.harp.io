@@ -1,7 +1,8 @@
 extends ../_layout
 
 block content
-  h1 #{current.path[0]}
+  section.title
+    h1 #{current.path[0]}
   for post in public.blog._data.entries
     if post.published
       li: a(href="#{post.url}") #{post.title}

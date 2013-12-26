@@ -1,0 +1,11 @@
+!!!
+html
+  head
+    != partial('../_shared/css')
+  body.cbp-spmenu-push
+    header#nav-header
+      != partial('../_shared/nav')
+    main
+      article
+        != yield
+    != partial('../_shared/js')

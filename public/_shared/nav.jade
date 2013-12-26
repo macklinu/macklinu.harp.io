@@ -4,5 +4,12 @@ button(type="button", role="button", aria-label="Toggle Navigation", class="line
   span.lines
 nav(class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left", id="cbp-spmenu-s1")
   h3 #{site_name}
-  for section in data.sections
-    a(class="#{ current.path[0] == section.name ? 'active' : '' }", href="#{section.route}") #{section.name}
+  ul.top
+    for section in data.sections
+      li
+        a(class="#{ current.path[0] == section.name ? 'active' : '' }", href="#{section.route}") #{section.name}
+  ul.bottom
+    for s in social
+      li(id="#{s.title}")
+        a(href="#{s.url}/#{s.username}", alt="#{s.title}", target="_blank")
+          i(class="fa fa-2x #{s.icon}")

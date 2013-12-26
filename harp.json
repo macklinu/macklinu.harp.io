@@ -6,7 +6,33 @@
       "last": "Underdown"
     },
     "url": "http://mackli.nu",
-    "site_name": "mackli.nu"
+    "site_name": "mackli.nu",
+    "social" : [
+      {
+        "title": "twitter",
+        "url": "http://twitter.com",
+        "username": "macklinu",
+        "icon": "fa-twitter"
+      },
+      {
+        "title": "instagram",
+        "url": "http://instagram.com",
+        "username": "macklinu",
+        "icon": "fa-instagram"
+      },
+      {
+        "title": "github",
+        "url": "http://github.com",
+        "username": "macklinu",
+        "icon": "fa-github"
+      },
+      {
+        "title": "linkedin",
+        "url": "http://linkedin.com/in",
+        "username": "macklinu",
+        "icon": "fa-linkedin"
+      }
+    ]
   },
   "domains": ["mackli.nu"]
 }
