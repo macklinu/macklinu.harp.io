@@ -1,0 +1,12 @@
+{
+  "globals": {
+    "title": "Macklin Underdown",
+    "name": {
+      "first": "Macklin",
+      "last": "Underdown"
+    },
+    "url": "http://mackli.nu",
+    "site_name": "mackli.nu"
+  },
+  "domains": ["mackli.nu"]
+}

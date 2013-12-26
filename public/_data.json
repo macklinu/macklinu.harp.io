@@ -1,0 +1,20 @@
+{
+  "sections": [
+    {
+      "name": "home",
+      "route": "/"
+    },
+    {
+      "name": "about",
+      "route": "/about"
+    },
+    {
+      "name": "blog",
+      "route": "/blog"
+    },
+    {
+      "name": "projects",
+      "route": "/projects"
+    }
+  ]
+}
