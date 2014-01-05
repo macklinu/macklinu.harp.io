@@ -25,6 +25,10 @@ $dark-tertiary: darken($dark-main, 80%);
 $dark-text: rgb(60, 60, 60);
 $blue-dark: darken($dark-main, 20%);
 
+$sans: 'Source Sans Pro';
+$serif: 'Cardo';
+$code-font: 'Source Code Pro';
+
 ::selection {
   background: $dark-secondary;
   color: lighten($dark-main, 50%);
@@ -44,7 +48,7 @@ body {
   background-color: $dark-main;
   color: $dark-text;
   border:1px solid transparent;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $sans, sans-serif;
 }
 a {
   color: $dark-tertiary;
@@ -90,11 +94,11 @@ main {
       max-width: 100%;
       font-size: 1.5em;
       line-height: 1.5em;
-      font-family: 'Cardo', Georgia, serif;
+      font-family: $serif, Georgia, serif;
       &.lead {
         margin-top: 0;
         font-size: 2.3em;
-        font-family: "Source Sans Pro";
+        font-family: $sans;
         font-weight: 300;
       }
       a {
@@ -108,20 +112,28 @@ main {
       border-left: 10px solid #ccc;
       padding-left: 0.5em;
     }
+    li {
+      font-size: 1.5em;
+      font-family: $serif;
+    }
   }
 }
 
 li {
   a {
-    font-family: "Source Sans Pro";
+    font-family: $sans;
     font-weight: 300;
   }
 }
 
 pre {
   code {
-    font-family: "Source Code Pro";
+    font-family: $code-font;
   }
+}
+
+#img404 {
+  max-width: 200px;
 }
 
 // =========== General button styles & variables =======================================//
