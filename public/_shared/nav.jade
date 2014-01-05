@@ -3,7 +3,7 @@
 button(type="button", role="button", aria-label="Toggle Navigation", class="lines-button arrow x", id="showLeftPush")
   span.lines
 nav(class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left", id="cbp-spmenu-s1")
-  h3 #{site_name}
+  h3.site-name: a(href="/") #{site_name}
   ul.top
     for section in data.sections
       li

@@ -30,3 +30,7 @@ hideMenu = () ->
 document.onkeydown = (event) ->
   event = event || window.event
   hideMenu() if event.keyCode is 27
+
+$(document).ready ->
+  $('pre code').each (i, e) ->
+      hljs.highlightBlock e

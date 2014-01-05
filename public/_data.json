@@ -1,10 +1,6 @@
 {
   "sections": [
     {
-      "name": "home",
-      "route": "/"
-    },
-    {
       "name": "about",
       "route": "/about"
     },
