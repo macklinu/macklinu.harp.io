@@ -1,12 +1,18 @@
-[
-  {
+{
+  "fthrsn": {
+    "name": "fthrsn",
+    "tidbit": "A bedroom pop project",
+    "img": "http://f0.bcbits.com/img/0001427196_20.jpg",
+    "published": true
+  },
+  "duonome": {
     "name": "Duonome",
     "tidbit": "A polyrhythmic metronome",
-    "url": "duonome"
+    "published": false
   },
-  {
+  "duonome": {
     "name": "Tracktables",
     "tidbit": "A trackball mouse DJ controller",
-    "url": "tracktables"
+    "published": false
   }
-]
+}

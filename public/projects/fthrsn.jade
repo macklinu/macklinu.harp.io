@@ -1,0 +1,10 @@
+extends ../_layout
+
+- var name = current.path[1]
+
+block content
+  section.title
+    main 
+      article
+        h1 #{public.projects._data[name].name}
+        include _md/fthrsn.md

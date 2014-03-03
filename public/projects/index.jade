@@ -3,9 +3,10 @@ extends ../_layout
 block content
   section.title
     h1 #{current.path[0]}
-  for project in public.projects._data
-    a(href="./#{project.url}")
-      section.card
-        h1 #{project.name}
-        h2 #{project.tidbit}
-        img(src="/img/view-from-dlabs-floor-5.jpg")
+  for project, slug in public.projects._data
+    if project.published
+      a(href="./#{slug}")
+        section.card
+          h1 #{project.name}
+          h2 #{project.tidbit}
+          img(src="#{project.img}")
