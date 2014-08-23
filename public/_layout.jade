@@ -1,0 +1,16 @@
+!!!
+html(lang="en")
+  head
+    != partial("_shared/head")
+    != partial("_shared/font-face")
+  body
+    if current.source == 'index' || current.path.length == 1
+      .container.container--articles(role="main")
+        != yield
+    else
+      != partial(current.path[0] + "/_nest", { yield: yield })
+    != partial("_shared/footer")
+  if disqus
+    != partial("_shared/comment-count")
+  if analytics
+    != partial("_shared/analytics")
